@@ -1,0 +1,34 @@
+name: SansSMP
+version: 1.5.0
+main: fr.sanssmp.SansSMP
+api-version: '1.21'
+author: SansSMP
+description: Epees custom, objets legendaires, tokens, rituel et monde event.
+
+commands:
+  rituel:
+    description: Lance un rituel, ou /rituel stop pour annuler.
+    usage: /rituel [objet|stop]
+    permission: sanssmp.rituel
+  epee:
+    description: Donne un objet custom a un joueur.
+    usage: /epee <objet> [joueur]
+    permission: sanssmp.epee
+  warp:
+    description: Se teleporter (ex: /warp event).
+    usage: /warp event
+    permission: sanssmp.warp
+  event:
+    description: Gere le monde event (/event build on|off).
+    usage: /event build <on|off>
+    permission: sanssmp.event
+
+permissions:
+  sanssmp.rituel:
+    default: op
+  sanssmp.epee:
+    default: op
+  sanssmp.warp:
+    default: true
+  sanssmp.event:
+    default: op
